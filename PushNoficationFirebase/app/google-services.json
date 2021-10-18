@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1067498469655",
+    "project_id": "pushnoficationdemo",
+    "storage_bucket": "pushnoficationdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067498469655:android:e2fe714fba8852274e9f52",
+        "android_client_info": {
+          "package_name": "fpt.edu.pushnoficationfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067498469655-u7fvj9vvck2itc4vadrghrkggdr8rva5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fpt.edu.pushnoficationfirebase",
+            "certificate_hash": "230c5c6cb9f497dfe9124d71fe30fbda9203425a"
+          }
+        },
+        {
+          "client_id": "1067498469655-3gusbnpo9bq26uft01d4lop92rv07cc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_bJNg7gxcHUPKD5j9T9uCzrOiKUJE6_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067498469655-3gusbnpo9bq26uft01d4lop92rv07cc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

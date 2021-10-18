@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="16sp"
+           android:text="Terms: "/>
+       <TextView
+           android:id="@+id/tv_terms"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="16sp"
+           android:layout_marginStart="18dp"
+           android:text="Terms: "/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Source: "/>
+        <TextView
+            android:id="@+id/tv_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="18dp"
+            android:text="source: "/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="VND: "/>
+        <TextView
+            android:id="@+id/tv_vnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="18dp"
+            android:text="VND: "/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="API"/>
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST"/>
+    <TextView
+        android:id="@+id/tv_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="VND: "/>
+
+</LinearLayout>

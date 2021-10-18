@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragment_list"
+        android:layout_width="0dp"
+        android:name="com.example.fragmentsample.ListProductsFragment"
+        android:layout_weight="4"
+        android:layout_height="match_parent"></fragment>
+    <fragment
+        android:id="@+id/fragment_details"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:name="com.example.fragmentsample.ProductDetailsFragment"
+        android:layout_height="match_parent"></fragment>
+
+</LinearLayout>
