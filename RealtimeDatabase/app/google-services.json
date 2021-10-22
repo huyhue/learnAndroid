@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "285766990935",
+    "project_id": "realtime-demo-d2835",
+    "storage_bucket": "realtime-demo-d2835.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285766990935:android:676fcd11dc2d490a587712",
+        "android_client_info": {
+          "package_name": "fpt.edu.realtimedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285766990935-986oc26g5ilvfpt83tm0trr64771k0og.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fpt.edu.realtimedatabase",
+            "certificate_hash": "230c5c6cb9f497dfe9124d71fe30fbda9203425a"
+          }
+        },
+        {
+          "client_id": "285766990935-vn3bs2k1juru9nu252k0i6tk0c7o88mc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5T2HEpp4QlO5azR1IUPUgLrKE5k06vTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285766990935-vn3bs2k1juru9nu252k0i6tk0c7o88mc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

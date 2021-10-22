@@ -15,6 +15,7 @@ import android.widget.EditText;
 import org.jetbrains.annotations.NotNull;
 
 public class ListProductsFragment extends Fragment {
+
     OnListItemClickListener listener;
     Button btnNext;
     EditText edtHello;
