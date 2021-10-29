@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -108,21 +110,38 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onClickDeleteData() {
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("test");
-        myRef.removeValue(new DatabaseReference.CompletionListener() {
-            @Override
-            public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
-                Toast.makeText(MainActivity.this, "Delete data success", Toast.LENGTH_SHORT).show();
-            }
-        });
+        new AlertDialog.Builder(this)
+                .setTitle(getString(R.string.app_name))
+                .setMessage("Ban co chac chan muon xoa ban ghi nay khong ?")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        FirebaseDatabase database = FirebaseDatabase.getInstance();
+                        DatabaseReference myRef = database.getReference("test");
+                        myRef.removeValue(new DatabaseReference.CompletionListener() {
+                            @Override
+                            public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
+                                Toast.makeText(MainActivity.this, "Delete data success", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                })
+                .setNegativeButton("Cancel", null)
+                .show();
     }
 
     private void onClickPushData() {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
+        DatabaseReference myRef = database.getReference("my_app");
 
-        myRef.setValue(edtData.getText().toString().trim(), new DatabaseReference.CompletionListener() {
+        Map<String, Boolean> map = new HashMap<>();
+        map.put("1", true);
+        map.put("2", false);
+        map.put("3", true);
+        map.put("4", false);
+        String str = edtData.getText().toString().trim();
+
+        myRef.setValue(map, new DatabaseReference.CompletionListener() {
             @Override
             public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
                 Toast.makeText(MainActivity.this, "Push data success", Toast.LENGTH_SHORT).show();
@@ -144,15 +163,25 @@ public class MainActivity extends AppCompatActivity {
 
     private void onClickGetData() {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("user_info");
+        DatabaseReference myRef = database.getReference("my_app");
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
+                //Get data by OBJECT
                 User user = dataSnapshot.getValue(User.class);
-                tvData.setText(user.toString());
+
+                //Get data by MAP
+                Map<String, Boolean> mapResult = new HashMap<>();
+                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
+                    String key = dataSnapshot1.getKey();
+                    Boolean value = dataSnapshot1.getValue(Boolean.class);
+                    mapResult.put(key, value);
+                }
+
+                tvData.setText(mapResult.toString());
             }
 
             @Override

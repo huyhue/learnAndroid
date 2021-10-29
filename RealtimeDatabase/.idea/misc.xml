@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidLearn21/RealtimeDatabase/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
+        <entry key="..\:/AndroidLearn21/RealtimeDatabase/app/src/main/res/layout/activity_main2.xml" value="0.19429347826086957" />
+        <entry key="..\:/AndroidLearn21/RealtimeDatabase/app/src/main/res/layout/item_job.xml" value="0.19429347826086957" />
+        <entry key="..\:/AndroidLearn21/RealtimeDatabase/app/src/main/res/layout/layout_dialog_update.xml" value="0.19021739130434784" />
       </map>
     </option>
   </component>

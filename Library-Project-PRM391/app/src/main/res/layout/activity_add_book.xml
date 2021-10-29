@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green_1"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_top_bar_notification" />
+    </Toolbar>
+
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/img_camera" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Cover"
+        android:textColor="@color/green_1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_edit_text"
+        android:hint="Title book"
+        android:padding="15dp"
+        android:textColor="@color/green_1"
+        android:textColorHint="@color/green_1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_edit_text"
+        android:hint="Author"
+        android:padding="15dp"
+        android:textColor="@color/green_1"
+        android:textColorHint="@color/green_1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_edit_text"
+        android:hint="Category"
+        android:padding="15dp"
+        android:textColor="@color/green_1"
+        android:textColorHint="@color/green_1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_edit_text"
+        android:hint="Desciption"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:padding="15dp"
+        android:lines="6"
+        android:textColor="@color/green_1"
+        android:textColorHint="@color/green_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#033E34"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:text="UPLOAD FILE"
+            android:background="@drawable/background_signup_button"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#033E34"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:text="PULISH"
+            android:background="@drawable/background_signup_button"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:gravity="bottom"
+        app:itemIconTint="@color/green_1"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>

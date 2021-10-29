@@ -1,5 +1,8 @@
 package fpt.edu.realtimedatabase;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Job {
     private int id;
     private String name;
@@ -34,5 +37,11 @@ public class Job {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("name", name);
+        return map;
     }
 }
