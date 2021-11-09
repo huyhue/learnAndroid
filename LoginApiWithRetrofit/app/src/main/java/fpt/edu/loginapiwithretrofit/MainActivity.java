@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             bundle.putSerializable("object_user", mUser);
             intent.putExtras(bundle);
             startActivity(intent);
-        }else {
+        } else {
             Toast.makeText(MainActivity.this, "Username or password invalid", Toast.LENGTH_SHORT).show();
         }
     }

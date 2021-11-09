@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tv2;
     private TextView tv3;
     private TextView tvPost;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,11 +35,12 @@ public class MainActivity extends AppCompatActivity {
         tv3 = findViewById(R.id.tv_vnd);
         tvPost = findViewById(R.id.tv_post);
         Button btn = findViewById(R.id.btn_api);
+        Button btnPost = findViewById(R.id.btn_post);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //clickCallApi();
+//                clickCallApi();
                 sendPosts();
             }
         });
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void sendPosts() {
         //https://jsonplaceholder.typicode.com/posts
-        Post post = new Post(152,102,"HuyTPG", "Huy Hue Channel");
+        Post post = new Post(152,102,"HuyTPG Viet Nam", "Huy Hue Channel");
         ApiService.apiService.sendPosts(post).enqueue(new Callback<Post>() {
             @Override
             public void onResponse(Call<Post> call, Response<Post> response) {

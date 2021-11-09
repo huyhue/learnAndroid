@@ -11,6 +11,6 @@ public interface MyApiEndpointInterface {
     @GET("todos/{id}")
     Call<User> getUser(@Path("id") String id);
 
-    @GET("todos")
+    @GET("api/v1/LearnAPI")
     Call<List<User>> getAllUser();
 }

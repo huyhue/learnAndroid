@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);
 
-        String BASE_URL = "https://jsonplaceholder.typicode.com/";
+        String BASE_URL = "https://616a1cfa16e7120017fa0ed3.mockapi.io/";
 
         Retrofit retrofit = new Retrofit.Builder() .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create()) .build();

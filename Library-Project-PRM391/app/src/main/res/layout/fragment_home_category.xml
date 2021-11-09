@@ -8,8 +8,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <include layout="@layout/fragment_home_book_horizontal" />
+        <include layout="@layout/view_book_horizontal" />
 
-        <include layout="@layout/fragment_home_book_horizontal" />
+        <include layout="@layout/view_book_horizontal" />
     </LinearLayout>
 </HorizontalScrollView>
