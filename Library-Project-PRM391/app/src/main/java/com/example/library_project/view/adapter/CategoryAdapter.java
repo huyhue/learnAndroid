@@ -83,7 +83,7 @@ public class CategoryAdapter extends BaseAdapter {
 //                ft.replace(R.id.view_pager_main, bookFragment);
 //                ft.addToBackStack(null);
 //                ft.commit();
-                iListBook.setViewBook(id, categoryList.get(position).getName() );
+//                iListBook.setViewBook(id, categoryList.get(position).getName() );
             }
         });
         return rowView;
